@@ -14,6 +14,7 @@ class UpdateNoteActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        binding = ActivityUpdateNoteBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         db = NoteDatabaseHelper(this)
