@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="@dimen/_16sdp"
+    tools:context=".AddNoteActivity">
+    <TextView
+        android:id="@+id/addNoteHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_alignParentTop="true"
+        android:text="Add Note."
+        android:textColor="@color/orange"
+        android:textSize="24dp"/>
+
+    <ImageView
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/save_note"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/addNoteHeading"
+        android:layout_marginEnd="@dimen/_6sdp"
+        app:tint="@color/orange"
+
+        />
+
+    <EditText
+        android:id="@+id/titleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_below="@+id/addNoteHeading"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:background="@drawable/orange_border"
+        android:fontFamily="monospace"
+        android:hint="Enter the title"
+        android:maxLines="1"
+
+        android:padding="@dimen/_12sdp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/contentEditText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/titleEditText"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:background="@drawable/orange_border"
+        android:gravity="top"
+        android:hint="Enter the Descrition....  "
+        android:padding="@dimen/_12sdp"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>
